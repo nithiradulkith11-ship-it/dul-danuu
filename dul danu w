@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>For My Love ❤️</title>
+
+<style>
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    min-height:100vh;
+    overflow-x:hidden;
+    font-family:"Segoe UI",sans-serif;
+    text-align:center;
+    color:#5b2942;
+    background:linear-gradient(
+        135deg,
+        #ffeff7,
+        #ffd6e8,
+        #fff5fa
+    );
+}
+
+/* Floating hearts */
+.hearts span{
+    position:fixed;
+    bottom:-50px;
+    font-size:25px;
+    animation:float 8s linear infinite;
+    opacity:.7;
+    z-index:0;
+}
+
+.hearts span:nth-child(1){
+    left:8%;
+    animation-delay:0s;
+}
+
+.hearts span:nth-child(2){
+    left:23%;
+    animation-delay:2s;
+}
+
+.hearts span:nth-child(3){
+    left:42%;
+    animation-delay:4s;
+}
+
+.hearts span:nth-child(4){
+    left:64%;
+    animation-delay:1s;
+}
+
+.hearts span:nth-child(5){
+    left:82%;
+    animation-delay:3s;
+}
+
+@keyframes float{
+    to{
+        transform:translateY(-115vh) rotate(25deg);
+        opacity:0;
+    }
+}
+
+.container{
+    position:relative;
+    z-index:1;
+    max-width:760px;
+    margin:auto;
+    padding:30px 18px 60px;
+}
+
+.card{
+    background:rgba(255,255,255,.75);
+    backdrop-filter:blur(12px);
+    border:1px solid rgba(255,255,255,.9);
+    border-radius:30px;
+    padding:40px 25px;
+    margin-top:35px;
+    box-shadow:0 15px 50px rgba(156,54,96,.18);
+}
+
+.badge{
+    display:inline-block;
+    background:#fff0f6;
+    padding:9px 18px;
+    border-radius:30px;
+    font-size:14px;
+}
+
+.big-heart{
+    font-size:70px;
+    margin-top:15px;
+    animation:pulse 1.4s infinite;
+}
+
+@keyframes pulse{
+    50%{
+        transform:scale(1.15);
+    }
+}
+
+h1{
+    font-size:clamp(38px,9vw,70px);
+    margin:10px 0;
+    color:#d83c78;
+}
+
+.subtitle{
+    font-size:18px;
+    line-height:1.8;
+}
+
+button{
+    border:none;
+    border-radius:999px;
+    padding:15px 25px;
+    margin:10px 5px;
+    font-size:16px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.main-btn{
+    background:#e94b88;
+    color:white;
+    box-shadow:0 8px 20px rgba(233,75,136,.3);
+}
+
+.second-btn{
+    background:white;
+    color:#d83c78;
+}
+
+button:hover{
+    transform:scale(1.05);
+}
+
+.hidden{
+    display:none;
+}
+
+.letter{
+    text-align:left;
+    line-height:1.9;
+    font-size:17px;
+    background:#fff8fb;
+    border-radius:22px;
+    padding:25px;
+    margin-top:25px;
+    animation:appear .8s ease;
+}
+
+@keyframes appear{
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+.love-text{
+    text-align:center;
+    font-size:23px;
+    color:#d83c78;
+}
+
+.footer{
+    margin-top:30px;
+    font-size:13px;
+    opacity:.65;
+}
+</style>
+</head>
+
+
+<body>
+
+<!-- Floating decorations -->
+
+<div class="hearts">
+
+    <span>💗</span>
+    <span>💕</span>
+    <span>🌸</span>
+    <span>💖</span>
+    <span>🎀</span>
+
+</div>
+
+
+<div class="container">
+
+    <div class="card">
+
+        <div class="badge">
+            A little surprise, just for you 🎀
+        </div>
+
+
+        <div class="big-heart">
+            ❤️
+        </div>
+
+
+        <h1>
+            Dulkith & Danuji
+        </h1>
+
+
+        <p class="subtitle">
+
+            There are millions of people in this world...
+
+            <br>
+
+            but somehow, my heart chose
+
+            <b>you.</b> ❤️
+
+        </p>
+
+
+        <button
+            class="main-btn"
+            onclick="openLove()">
+
+            Open your surprise 💌
+
+        </button>
+
+
+        <button
+            class="second-btn"
+            onclick="showReason()">
+
+            One more thing… 🌷
+
+        </button>
+
+
+        <!-- Love Letter -->
+
+        <div
+            id="surprise"
+            class="hidden">
+
+            <div class="letter">
+
+                <p>
+                    <b>My Love,</b>
+                </p>
+
+
+                <p>
+
+                    I don't need a special day to tell you
+                    how much you mean to me.
+
+                    You make ordinary moments feel special,
+                    and somehow your smile makes my whole
+                    day better. ❤️
+
+                </p>
+
+
+                <p>
+
+                    I may not always find the perfect words,
+
+                    but one thing will always stay the same —
+
+                    <b>
+                        I choose you, again and again.
+                    </b>
+
+                </p>
+
+
+                <p>
+
+                    Thank you for being you.
+
+                    Thank you for every little memory,
+                    every laugh, every conversation and
+                    every moment we've shared.
+
+                </p>
+
+
+                <p class="love-text">
+
+                    <b>
+                        Love you, Raththaran ❤️
+                    </b>
+
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- Second surprise -->
+
+        <div
+            id="reason"
+            class="hidden">
+
+            <div
+                class="letter"
+                style="text-align:center;">
+
+                <p>
+                    My favourite place?
+                </p>
+
+                <h2 style="color:#d83c78;">
+                    Anywhere with you. 💕
+                </h2>
+
+
+                <p>
+                    My favourite person?
+                </p>
+
+                <h2 style="color:#d83c78;">
+                    Still you. 🌷
+                </h2>
+
+
+                <p>
+                    My biggest wish?
+                </p>
+
+                <h2 style="color:#d83c78;">
+                    More memories with you. ✨
+                </h2>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer">
+
+        Made with love, just for you ❤️
+
+    </div>
+
+</div>
+
+
+
+<script>
+
+function openLove(){
+
+    document
+        .getElementById("surprise")
+        .classList.remove("hidden");
+
+    document
+        .getElementById("reason")
+        .classList.add("hidden");
+
+    window.scrollTo({
+        top:document.body.scrollHeight,
+        behavior:"smooth"
+    });
+
+}
+
+
+function showReason(){
+
+    document
+        .getElementById("reason")
+        .classList.remove("hidden");
+
+    document
+        .getElementById("surprise")
+        .classList.add("hidden");
+
+    window.scrollTo({
+        top:document.body.scrollHeight,
+        behavior:"smooth"
+    });
+
+}
+
+</script>
+
+</body>
+</html>
